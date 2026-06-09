@@ -15,7 +15,7 @@ RUN apt-get update \
 
 COPY --from=builder /app/target/release/api /usr/local/bin/api
 
-EXPOSE 3000
+EXPOSE 4000
 
 CMD ["/usr/local/bin/api"]
 
